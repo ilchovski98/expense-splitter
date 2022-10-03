@@ -1,5 +1,6 @@
 import Form from '../Ui/Form/Form';
 import { useInput } from '../../hooks/useInput';
+import { Link } from 'react-router-dom';
 
 function RegisterForm() {
   const {value:email, bind:bindEmail} = useInput('');
@@ -52,6 +53,10 @@ function RegisterForm() {
 
       <div className="form-default__actions">
         <button className="btn btn--full">Submit</button>
+      </div>
+
+      <div className="form-default__footer">
+        <Link to="/login">Already have an account? Log in</Link>
       </div>
     </Form>
   )

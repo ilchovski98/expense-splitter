@@ -1,4 +1,5 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -7,9 +8,9 @@ function Header(props) {
         {
           props.logo &&
           <div className="header__logo">
-            <a href="#">
+            <Link to="/">
               {props.logo}
-            </a>
+            </Link>
           </div>
         }
 

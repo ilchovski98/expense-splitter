@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.form-default a {
+  font-weight: 400;
+}
+
 .form-default label {
   font-weight: 14px;
   font-weight: 600;
@@ -47,4 +51,19 @@
 
 .form-default .form-default__actions {
   margin-top: 17px;
+}
+
+.form-default .form-default__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-default .form-default__footer {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-default .form-default__footer a {
+  font-weight: 600;
 }

@@ -1,10 +1,9 @@
 import Form from '../Ui/Form/Form';
 import { useInput } from '../../hooks/useInput';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function LoginForm() {
+function ResetPasswordForm() {
   const {value:email, bind:bindEmail} = useInput('');
-  const {value:password, bind:bindPassword} = useInput('');
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -12,7 +11,7 @@ function LoginForm() {
 
   return (
     <Form className="form-default" onSubmit={event => handleSubmit(event)}>
-      <h1 className="form-default__title">Login</h1>
+      <h1 className="form-default__title">Reset Password</h1>
 
       <div className="form-default__row">
         <label>
@@ -26,30 +25,15 @@ function LoginForm() {
         </label>
       </div>
 
-      <div className="form-default__row">
-        <label>
-          <div className="form-default__inner">
-            Password
-            <Link to="/reset-password">Forgotten password?</Link>
-          </div>
-          <input
-            type="password"
-            value={password}
-            {...bindPassword}
-            className="form-default__field"
-          />
-        </label>
-      </div>
-
       <div className="form-default__actions">
         <button className="btn btn--full">Submit</button>
       </div>
 
       <div className="form-default__footer">
-        <Link to="/register">Sign up for an account</Link>
+        <Link to="/login">Return to login</Link>
       </div>
     </Form>
   )
 }
 
-export default LoginForm;
+export default ResetPasswordForm;

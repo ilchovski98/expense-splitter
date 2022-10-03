@@ -1,4 +1,4 @@
-import FullScreenSection from "../sections/RegisterLogin/FullScreenSection";
+import FullScreenSection from "../sections/FullScreenSection/FullScreenSection";
 import RegisterForm from "../components/RegisterForm/RegisterForm";
 
 function Register() {
