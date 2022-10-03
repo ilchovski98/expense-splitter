@@ -1,0 +1,19 @@
+.header {
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  background: rgba(25, 27, 31, 0.9);
+  border-bottom: 1px solid #191b1f;
+  transition: background-color 0.25s ease 0s;
+}
+
+.header .header__inner {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

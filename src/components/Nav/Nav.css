@@ -1,0 +1,11 @@
+.nav ul {
+  display: flex;
+}
+
+.nav li:nth-child(1) {
+  margin-left: 0;
+}
+
+.nav li {
+  margin-left: 15px;
+}

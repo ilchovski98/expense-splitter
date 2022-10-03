@@ -1,13 +1,100 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  color: #adbac7;
+  background-color: #22272e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: #54e3ff;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.btn {
+  border: 1px solid rgba(205,217,229,0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #fff;
+  transition: background .3s, border .3s;
+  background: #373e47;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #444c56;
+  border: 1px solid #768390;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn--green {
+  background: #2da44e;
+  border: none;
+}
+
+.btn--green:hover {
+  background: #2c974b;
+}
+
+.btn--green:active {
+  background: hsla(137,55%,36%,1);
 }

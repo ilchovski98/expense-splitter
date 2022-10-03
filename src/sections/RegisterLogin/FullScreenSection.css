@@ -1,0 +1,7 @@
+.full-screen-section {
+  padding: 30px;
+  min-height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
