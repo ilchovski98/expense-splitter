@@ -1,6 +1,7 @@
 import Form from '../Ui/Form/Form';
 import { useInput } from '../../hooks/useInput';
 import { Link } from 'react-router-dom';
+import { register } from '../../api/users';
 
 function RegisterForm() {
   const {value:email, bind:bindEmail} = useInput('');
@@ -9,6 +10,8 @@ function RegisterForm() {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    register({name, email, password});
   }
 
   return (

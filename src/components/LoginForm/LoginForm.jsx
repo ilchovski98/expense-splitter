@@ -1,6 +1,7 @@
 import Form from '../Ui/Form/Form';
 import { useInput } from '../../hooks/useInput';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { login } from '../../api/users';
 
 function LoginForm() {
   const {value:email, bind:bindEmail} = useInput('');
@@ -8,6 +9,8 @@ function LoginForm() {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    login({email, password});
   }
 
   return (
