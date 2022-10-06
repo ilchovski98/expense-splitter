@@ -1,16 +1,19 @@
 import Form from '../Ui/Form/Form';
 import { useInput } from '../../hooks/useInput';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../api/users';
 
-function LoginForm() {
+function LoginForm(props) {
   const {value:email, bind:bindEmail} = useInput('');
   const {value:password, bind:bindPassword} = useInput('');
 
-  const handleSubmit = event => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    login({email, password});
+    const token = await login({email, password});
+    if (token) {
+      window.location = '/';
+    }
   }
 
   return (

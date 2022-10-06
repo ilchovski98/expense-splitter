@@ -1,0 +1,17 @@
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkcyan;
+  cursor: pointer;
+}
+
+.avatar span {
+  font-size: 17px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}

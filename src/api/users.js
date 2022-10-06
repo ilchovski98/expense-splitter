@@ -33,13 +33,10 @@ const login = async (data) => {
       body: JSON.stringify(data),
     });
 
-    const response = await result.json();
     const token = result.headers.get('x-auth-token');
     localStorage.setItem('x-auth-token', token);
-    console.log('result', response);
-    console.log('token', token);
 
-    return response;
+    return token;
   } catch (error) {
     console.log(error);
   }
@@ -55,15 +52,10 @@ const register = async (data) => {
       },
       body: JSON.stringify(data),
     });
-    const response = await result.json();
     const token = result.headers.get('x-auth-token');
-
-    console.log('token', token);
-    console.log('response', response);
-
     localStorage.setItem('x-auth-token', token);
 
-    return response;
+    return token;
   } catch (error) {
     console.log(error);
   }

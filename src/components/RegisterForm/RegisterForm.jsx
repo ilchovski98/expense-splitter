@@ -11,7 +11,11 @@ function RegisterForm() {
   const handleSubmit = event => {
     event.preventDefault();
 
-    register({name, email, password});
+    const token = register({name, email, password});
+
+    if (token) {
+      window.location = '/';
+    }
   }
 
   return (

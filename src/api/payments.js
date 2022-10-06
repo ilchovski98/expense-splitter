@@ -57,9 +57,9 @@ const deletePayment = () => {
 }
 
 module.exports = {
-  getMyPayments: getMyPayments,
-  getAllPayments: getAllPayments,
-  createPayment: createPayment,
-  updatePayment: updatePayment,
-  deletePayment: deletePayment
+  getMyPayments,
+  getAllPayments,
+  createPayment,
+  updatePayment,
+  deletePayment
 }
