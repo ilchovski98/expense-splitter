@@ -67,3 +67,9 @@
 .form-default .form-default__footer a {
   font-weight: 600;
 }
+
+.form-default--no-border {
+  padding: 0;
+  border: none;
+  margin: 0;
+}

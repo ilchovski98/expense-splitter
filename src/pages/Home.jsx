@@ -6,6 +6,8 @@ import {
   updatePayment,
   deletePayment } from '../api/payments';
 
+import UserSettingsPanel from '../components/UserSettingsPanel/UserSettingsPanel';
+
 function Home() {
 
   const handleMyPayments = async () => {
@@ -21,6 +23,8 @@ function Home() {
         timeStamp: Date.now()
       })}>createPayment</button>
       <button onClick={() => handleMyPayments()}>Me</button>
+
+      <UserSettingsPanel />
     </>
   )
 }

@@ -15,8 +15,7 @@ const getMe = async () => {
         'x-auth-token': localStorage.getItem('x-auth-token')
       }
     });
-    console.log('result', await result.json());
-    return result;
+    return await result.json();
   } catch (error) {
     console.log(error);
   }
