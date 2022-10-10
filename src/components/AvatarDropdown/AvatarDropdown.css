@@ -1,0 +1,42 @@
+.avatar-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 15px);
+  border-radius: 15px;
+  background-color: #444c56;
+  border: 1px solid #768390;
+  overflow: hidden;
+  width: 180px;
+  padding: 5px 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.avatar-dropdown.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.avatar-dropdown .avatar-dropdown__group {
+  border-bottom: 1px solid #808080;
+  padding: 10px;
+}
+
+.avatar-dropdown .avatar-dropdown__group:last-child {
+  border-bottom: none;
+}
+
+.avatar-dropdown a,
+.avatar-dropdown .avatar-dropdown__btn {
+  text-decoration: none;
+  color: #fff;
+  transition: color .3s;
+  border: none;
+  background: transparent;
+}
+
+.avatar-dropdown a:hover,
+.avatar-dropdown .avatar-dropdown__btn:hover {
+  color: #54e3ff;
+}

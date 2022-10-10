@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Settings from './pages/Settings';
 import HeaderController from './components/HeaderController/HeaderController';
 import ResetPassword from './pages/ResetPassword';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
@@ -30,6 +31,7 @@ function App(props) {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/reset-password' element={<ResetPassword />} />
+        <Route path='/settings' element={<Settings />} />
       </Routes>
     </BrowserRouter>
   )

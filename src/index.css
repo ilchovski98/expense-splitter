@@ -71,6 +71,10 @@ h6 {
   line-height: 1.2;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   border: 1px solid rgba(205,217,229,0.1);
   padding: 10px 15px;
@@ -102,4 +106,9 @@ h6 {
 
 .btn--green:active {
   background: hsla(137,55%,36%,1);
+}
+
+.shell {
+  max-width: 1600px;
+  margin: auto;
 }
